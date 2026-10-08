@@ -41,23 +41,23 @@ export function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between gap-3 lg:gap-6">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
-              <div className="relative w-10 h-10 shrink-0 overflow-hidden rounded-xl shadow-xs transition-transform duration-200 group-hover:scale-105">
+            <Link href="/" className="flex items-center gap-2.5 sm:gap-3.5 shrink-0 group">
+              <div className="relative h-9 xs:h-10 sm:h-11 w-auto shrink-0 transition-transform duration-200 group-hover:scale-[1.02]">
                 <Image
-                  src="/images/jivani-logo.svg"
+                  src="/images/jivani-logo.png"
                   alt={clinicData.clinicName}
-                  width={40}
-                  height={40}
+                  width={220}
+                  height={100}
                   priority
-                  className="w-full h-full object-contain"
+                  className="h-full w-auto object-contain"
                 />
               </div>
-              <div className="flex flex-col min-w-0">
-                <span className="font-heading text-base xs:text-lg sm:text-xl font-bold tracking-tight text-slate-deep leading-tight group-hover:text-primary transition-colors truncate">
-                  {clinicData.clinicName}
+              <div className="hidden xs:flex flex-col min-w-0 pl-2.5 border-l border-slate-200">
+                <span className="text-[11px] sm:text-xs font-bold text-slate-deep leading-tight">
+                  Dr. Ruchi Goti
                 </span>
-                <span className="text-[10px] sm:text-[11px] font-medium text-slate-muted truncate max-w-[130px] xs:max-w-[190px] sm:max-w-none">
-                  Dr. Ruchi Goti • Mota Varachha, Surat
+                <span className="text-[9px] sm:text-[10px] font-medium text-slate-muted leading-tight truncate">
+                  Mota Varachha, Surat
                 </span>
               </div>
             </Link>

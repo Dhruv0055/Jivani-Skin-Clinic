@@ -47,9 +47,9 @@ export const metadata: Metadata = {
   authors: [{ name: "Dr. Ruchi Goti" }],
   creator: clinicData.clinicName,
   icons: {
-    icon: "/images/jivani-logo.svg",
-    shortcut: "/images/jivani-logo.png",
-    apple: "/images/jivani-logo.png",
+    icon: "/images/jivani-icon.png",
+    shortcut: "/images/jivani-icon.png",
+    apple: "/images/jivani-icon.png",
   },
   openGraph: {
     type: "website",

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { clinicData } from "@/data/clinic";
 import { ArrowUpRight, Phone, MapPin, Clock } from "lucide-react";
@@ -83,6 +84,17 @@ export function Footer() {
         {/* ── Top Section ── */}
         <div className="flex flex-col items-start justify-between gap-10 lg:flex-row lg:gap-16">
           <motion.div variants={riseItem} className="flex flex-col gap-3.5 sm:gap-4 lg:w-1/2">
+            {/* Brand Logo in Footer */}
+            <div className="inline-flex items-center bg-white rounded-xl px-3.5 py-2 shadow-sm w-fit">
+              <Image
+                src="/images/jivani-logo.png"
+                alt={clinicData.clinicName}
+                width={160}
+                height={72}
+                className="h-7 sm:h-8 w-auto object-contain"
+              />
+            </div>
+
             <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-[1.15] font-heading font-extrabold tracking-tight text-white">
               Healthy skin starts{"\n"}with expert care.
             </h2>
